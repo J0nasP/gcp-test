@@ -1,0 +1,19 @@
+runtime: php
+env: flex
+
+runtime_config: document_root: public
+
+skip_files:
+    - env
+
+env_variables:
+  APP_KEY: base64:SioSOzDv3dkND6ApeqrOKZAH2fzzxkUEdCegf/KPx3Y=
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 1
+
+resources:
+    cpu: 2
+    memory_gb: 4
+    disk_size_gb: 100
